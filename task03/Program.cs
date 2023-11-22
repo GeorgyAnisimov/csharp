@@ -44,6 +44,7 @@ else
 
 
 */
+Console.Clear();
 
 System.Console.WriteLine("Введите номер дня недели");
 
@@ -51,11 +52,9 @@ int userNumber = Convert.ToInt32(Console.ReadLine());
 
 int index = 1;
 
-int[] array = new int[5];
-
 string[] weekDays = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Субота", "Воскресенье" };
 
-if (userNumber < 7 && userNumber > 0)
+if (userNumber <= 7 && userNumber > 0)
 {
     System.Console.WriteLine(weekDays[userNumber - index]);
 }
